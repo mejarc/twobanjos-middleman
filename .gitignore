@@ -19,3 +19,5 @@
 
 # Ignore Simplecov output
 /coverage
+
+Gemfile.lock

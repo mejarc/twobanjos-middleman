@@ -32,18 +32,6 @@ describe 'Navigation', type: :feature do
   end
 end
 
-describe 'About me', type: :feature do
-  pending
-end
-
-describe 'About this site', type: :feature do
-  pending
-end
-
-describe 'Contact', type: :feature do
-  pending
-end
-
 describe 'Portfolio', type: :feature do
   pending
 end

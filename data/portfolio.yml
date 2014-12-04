@@ -1,0 +1,27 @@
+---
+recent:
+  errands:
+    name: 'Errands On The Way' 
+    url: 'errandsontheway.com'
+    description: >
+      I joined three other Dev Bootcamp students for our final project, 
+      a mobile-first Rails application helping the user find places 
+      to fulfill her errands along a given route. I pair-programmed with 
+      each of my teammates Jason, Christine, and Ryan in a very satisfying 
+      week of test-driven development.
+  ge: 
+    name: 'GE Global Research'
+    url: 'ge.geglobalresearch.com'
+    description: >
+      Wrangled an ornery herd of Grunt scripts, Bower packages, 
+      and Twitter Bootstrap forks into the 
+      <a href="http://www.creativebloq.com/netmag/using-bootstrap-complex-design-systems-7133781">Industrial Internet Design System (IIDS)</a>,
+      a framework of browser-side components for Java and .NET developers 
+      to use in their applications.
+  clorox:
+    name: 'The Clorox Company'
+    url: 'thecloroxcompany.com'
+    description: >
+      Sprinkled oxygen atoms on the corporate site for probably the best known brand of bleach on the planet. I contributed new markup and debugged 
+      CSS rules to an existing site served up by PHP.
+

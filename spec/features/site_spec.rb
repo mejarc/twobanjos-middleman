@@ -33,7 +33,14 @@ describe 'Navigation', type: :feature do
 end
 
 describe 'Portfolio', type: :feature do
-  pending
+  before do
+    visit '/portfolio.html'
+    @sites = page.all('dt')
+  end
+
+  it 'lists at least 10 web projects' do
+    expect(@sites.count).to be >= 10
+  end
 end
 
 

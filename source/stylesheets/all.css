@@ -1,17 +1,122 @@
 @charset "utf-8";
-@import "bourbon";
-@import "neat";
 
+/* Establishes the font faces in use for text and display.
+
+<p>This will be in Montserrat.</p>
+
+<h1 class="header">This will be in Josefin Sans.</h1>
+*/
 
 body { 
-  background: green;
-  font-family: Montserrat, Helvetica, sans-serif;
+  font: 100%/1.5 Montserrat, Helvetica, sans-serif;
   }
 
-nav, footer { background: yellow;
-  @include outer-container;
+
+.header {
+  font-family: 'Josefin Sans', sans-serif;
 }
 
-header, h1, dt {
-  font-family: 'Josefin Sans';
-} 
+
+/* typographic grid. Next we need to cre­ate a typo­graphic scale,
+this is the hier­archy that will define the font-sizes for our
+typo­graphic ele­ments. I like to use the fol­low­ing scale: 16, 18,
+21, 24, 36, 48. Let’s write that up: */
+
+h1 {
+  font-size: 3em;
+  line-height: 1em;
+  margin-bottom: .5em;
+}
+
+h2 {
+  font-size: 2.25em;
+  line-height: 1.33em;
+  margin-bottom: .67em;
+}
+
+h3 {
+  font-size: 1.5em;
+  line-height: 1em;
+  margin-bottom: 1em;
+}
+
+li, p {
+  margin-bottom: 1.5em;
+}
+
+/* Sets up a flexbox layout. 
+*/
+.wrapper {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0;
+  padding: 0;
+}
+
+
+.wrapper.page {
+  border: 1px solid red;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 80rem;
+  padding: 2vh 2vw;
+}
+
+/* Set page elements to 100% of viewport width.
+*/
+.footer,
+.header,
+.main,
+.nav {
+  flex: 1 100%;
+}
+
+/* Create blocks that evenly distribute along horizontal.
+*/
+
+.item {
+  background: magenta;
+  border: 1px solid blue;
+  height: 2.25rem;
+  padding: 2rem;
+  width: 100%;
+}
+
+/* Responsive display order.
+*/
+
+/* Larger screens will have the navigation at the top.
+*/
+@media all and (min-width: 769px){
+  .header {
+    order: 1;
+  }
+  .footer {
+    order: 4;
+  }
+  .main {
+    order: 3;
+  }
+  .nav {
+    order: 2;
+  }
+  .item {
+    margin: 0 0.2vw 0 0;
+    min-width: 2.25rem;
+    width: auto;
+  }
+}
+/* Utilities.
+*/
+.center {
+  text-align: center;
+}
+
+.plain {
+  font-weight: 400;
+  list-style: none;
+  text-decoration: none;
+}
+nav, footer { background: yellow;
+}

@@ -15,10 +15,13 @@
   </head>
   
   <body class="<%= page_classes %>">
-    <div class="wrapper">
-    <%= partial '/nav' %>
-    <%= yield %>
-    <%= partial '/footer' %>
+    <div class="wrapper page">
+      <%= partial '/header' %>
+      <div class="main">
+      <%= yield %>
+      </div>
+      <%= partial '/nav' %>
+      <%= partial '/footer' %>
     </div>
   </body>
 </html>

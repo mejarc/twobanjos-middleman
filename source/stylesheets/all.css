@@ -79,7 +79,33 @@ li, p {
   background: magenta;
   border: 1px solid blue;
   height: 2.25rem;
-  padding: 2rem;
+  padding: 1.25rem;
+  width: 100%;
+}
+
+/* Mobile-first navigation. Show "hamburger" icon by default.
+*/
+
+.nav .icon {
+  font-size: 4rem;
+  line-height: .02rem;
+}
+
+.nav .icon:before {
+  content: "\2261";
+  display: block;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  height: 1px;
+  overflow: hidden;
+  width: 1px;
+  position: absolute;  
+}
+
+.visually-hidden.show {
+  height: auto;
   width: 100%;
 }
 
@@ -89,22 +115,21 @@ li, p {
 /* Larger screens will have the navigation at the top.
 */
 @media all and (min-width: 769px){
-  .header {
-    order: 1;
-  }
-  .footer {
-    order: 4;
-  }
-  .main {
-    order: 3;
-  }
-  .nav {
-    order: 2;
-  }
+
   .item {
     margin: 0 0.2vw 0 0;
     min-width: 2.25rem;
     width: auto;
+  }
+
+  .nav .visually-hidden {
+    height: auto;
+    position: static;
+    width: 100%;
+  }
+
+  .nav .icon:before {
+    display: none;
   }
 }
 /* Utilities.
@@ -118,5 +143,5 @@ li, p {
   list-style: none;
   text-decoration: none;
 }
-nav, footer { background: yellow;
+footer { background: yellow;
 }

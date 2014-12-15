@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Two Banjos At Once. <%= current_page.data.title %></title>
     <%= favicon_tag "/favicon.ico?v=3" %>
-    <%= stylesheet_link_tag 'application', 'http://fonts.googleapis.com/css?family=Josefin+Sans:600|Montserrat:400,700' %>
+    <%= stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Josefin+Sans:600|Montserrat:400,700' %>
     <%= stylesheet_link_tag "normalize", "all" %>
     <%= javascript_include_tag  "all" %>
    
@@ -17,10 +17,11 @@
   <body class="<%= page_classes %>">
     <div class="wrapper page">
       <%= partial '/header' %>
+      <%= partial '/nav' %>
       <div class="main">
       <%= yield %>
       </div>
-      <%= partial '/nav' %>
+  
       <%= partial '/footer' %>
     </div>
   </body>

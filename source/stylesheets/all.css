@@ -12,38 +12,37 @@ body {
   }
 
 
-.header {
+.header,
+.nav {
   font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
 }
 
-
-/* typographic grid. Next we need to cre­ate a typo­graphic scale,
-this is the hier­archy that will define the font-sizes for our
-typo­graphic ele­ments. I like to use the fol­low­ing scale: 16, 18,
-21, 24, 36, 48. Let’s write that up: */
-
 h1 {
-  font-size: 3em;
-  line-height: 1em;
-  margin-bottom: .5em;
+  font-size: 3rem;
+  line-height: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 h2 {
-  font-size: 2.25em;
-  line-height: 1.33em;
-  margin-bottom: .67em;
+  font-size: 2.25rem;
+  line-height: 1.33rem;
+  margin-bottom: .67rem;
 }
 
 h3 {
-  font-size: 1.5em;
-  line-height: 1em;
-  margin-bottom: 1em;
+  font-size: 1.5rem;
+  line-height: 1rem;
+  margin-bottom: 1rem;
 }
 
 li, p {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.5rem;
 }
 
+.main {
+  margin-top: 1.5rem;
+}
 /* Sets up a flexbox layout. 
 */
 .wrapper {
@@ -76,10 +75,9 @@ li, p {
 */
 
 .item {
-  background: magenta;
   border: 1px solid blue;
-  height: 2.25rem;
-  padding: 1.25rem;
+  margin: 0;
+  padding: 1.33rem;
   width: 100%;
 }
 
@@ -100,17 +98,20 @@ li, p {
   clip: rect(0 0 0 0);
   height: 1px;
   overflow: hidden;
+  position: absolute;
+  top: 1.33rem; 
   width: 1px;
-  position: absolute;  
+  transition: height 0.4s ease-in;
+  transition: width 0.15s linear;
 }
 
-.visually-hidden.show {
+.nav .visually-hidden.show {
+  background: yellow;
+  clip: auto;
   height: auto;
+  position: relative;
   width: 100%;
 }
-
-/* Responsive display order.
-*/
 
 /* Larger screens will have the navigation at the top.
 */
@@ -122,15 +123,20 @@ li, p {
     width: auto;
   }
 
-  .nav .visually-hidden {
+  .nav {
+    margin-bottom: 1vh;
+    position: relative;
+  }
+
+ /* .nav .visually-hidden {
     height: auto;
     position: static;
     width: 100%;
-  }
-
+  }*/
+/*
   .nav .icon:before {
     display: none;
-  }
+  }*/
 }
 /* Utilities.
 */

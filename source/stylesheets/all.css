@@ -149,5 +149,16 @@ li, p {
   list-style: none;
   text-decoration: none;
 }
-footer { background: yellow;
+
+/* Colors and effects.
+*/
+a {
+  color: red;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
+
+a:hover, a:focus {
+  color: grey;
+}
+
+.nav { background: green; }

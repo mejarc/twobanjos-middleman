@@ -26,23 +26,20 @@ h1 {
 
 h2 {
   font-size: 2.25rem;
-  line-height: 1.33rem;
+  line-height: 2.25rem;
   margin-bottom: .67rem;
 }
 
 h3 {
   font-size: 1.5rem;
-  line-height: 1rem;
+  line-height: 1.5rem;
   margin-bottom: 1rem;
 }
 
-li, p {
+p {
   margin-bottom: 1.5rem;
 }
 
-.main {
-  margin-top: 1.5rem;
-}
 /* Sets up a flexbox layout. 
 */
 .wrapper {
@@ -106,7 +103,6 @@ li, p {
 }
 
 .nav .visually-hidden.show {
-  background: yellow;
   clip: auto;
   height: auto;
   position: relative;
@@ -116,7 +112,6 @@ li, p {
 /* Larger screens will have the navigation at the top.
 */
 @media all and (min-width: 769px){
-
   .item {
     margin: 0 0.2vw 0 0;
     min-width: 2.25rem;
@@ -124,19 +119,21 @@ li, p {
   }
 
   .nav {
-    margin-bottom: 1vh;
     position: relative;
   }
+  
+  .nav .icon,
+  .nav .icon:before {
+    display: none;
+  }
 
- /* .nav .visually-hidden {
+  .nav .visually-hidden {
+    clip: auto;
     height: auto;
     position: static;
     width: 100%;
-  }*/
-/*
-  .nav .icon:before {
-    display: none;
-  }*/
+  }
+
 }
 /* Utilities.
 */
@@ -154,7 +151,7 @@ li, p {
 */
 a {
   color: red;
-  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.8s ease;
 }
 
 a:hover, a:focus {

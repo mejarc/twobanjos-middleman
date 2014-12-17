@@ -1,0 +1,40 @@
+/* Establishes the font faces in use for text and display.
+
+<p>This will be in Montserrat.</p>
+
+<h1 class="header">This will be in Josefin Sans.</h1>
+*/
+
+body { 
+  font: 100%/1.5 Montserrat, Helvetica, sans-serif;
+  }
+
+
+.header,
+.nav {
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+  line-height: 2.25rem;
+  margin-bottom: .67rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+
+p {
+  margin-bottom: 1.5rem;
+}

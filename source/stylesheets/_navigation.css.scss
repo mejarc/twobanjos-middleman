@@ -1,0 +1,68 @@
+/* Mobile-first navigation. Show "hamburger" icon by default.
+*/
+
+.nav .icon {
+  font-size: 4rem;
+  line-height: .02rem;
+}
+
+.nav .icon:before {
+  content: "\2261";
+  display: block;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  top: 1.33rem; 
+  width: 1px;
+  transition: height 0.4s ease-in;
+  transition: width 0.15s linear;
+}
+
+.nav .visually-hidden.show {
+  clip: auto;
+  height: auto;
+  position: relative;
+  width: 100%;
+}
+
+/* Larger screens will have the navigation at the top.
+*/
+@media all and (min-width: 769px){
+  .item {
+    margin: 0 0.2vw 0 0;
+    min-width: 2.25rem;
+    width: auto;
+  }
+
+  .nav {
+    position: relative;
+  }
+  
+  .nav .icon,
+  .nav .icon:before {
+    display: none;
+  }
+
+  .nav .visually-hidden {
+    clip: auto;
+    height: auto;
+    position: static;
+    width: 100%;
+  }
+
+}
+/* Utilities.
+*/
+.center {
+  text-align: center;
+}
+
+.plain {
+  font-weight: 400;
+  list-style: none;
+  text-decoration: none;
+}

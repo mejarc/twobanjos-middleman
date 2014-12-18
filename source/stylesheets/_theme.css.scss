@@ -6,23 +6,28 @@ a {
 }
 
 body {
-  background-color: #6e92a1;
-  background-image: -webkit-linear-gradient(top, #6e92a1, #467386);
-  background-image:         linear-gradient(to bottom, #6e92a1, #467386);
-  color:  #022636;
+  background: $white no-repeat radial-gradient(circle, $white 75%, $accent);
+  color:  $text-color;
+
 }
 
 a {
- color: #103D50;
+ color: $default-link;
+ text-decoration: none;
 }
 
 a:hover, a:focus {
-  color: #467386;
-}
-.header {
-  opacity: 0.9;
+  color: $link-hover;
 }
 
+.header {
+  color: $primary-color;
+  text-shadow: $header-shadow;
+}
+
+.header::first-letter {
+  color:  $dark-primary-color;
+}
 /* CSS - Cascading Style Sheet */
 /* Palette color codes */
 /* Palette URL: http://paletton.com/#uid=33r0y0kllllaFw0g0qFqFg0w0aF */

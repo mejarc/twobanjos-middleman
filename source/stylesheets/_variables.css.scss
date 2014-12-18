@@ -1,0 +1,23 @@
+
+$primary-color: #AA4639;
+$dark-primary-color: darken($primary-color, 10%);
+$lt-primary-color: lighten($primary-color, 10%);
+
+$text-color: rgba( 51, 51, 51, 1);
+$default-link: tint($primary-color, 30%);
+$link-hover: rgba($text-color, .7);
+
+$header-shadow: 0 1px 0 darken($primary-color, 10%);
+
+$white: rgba(255, 255, 255, 1);
+$gray: lighten($text-color, 70%);
+$accent: adjust-hue($primary-color, 20%);
+
+$big-font: floor(golden-ratio(12px, 3));
+$medium-font: floor(golden-ratio(12px, 2));
+$base-font: 16px;
+
+$base-margin: $base-font;
+$base-lineheight: ceil(golden-ratio($base-font, 1));
+
+$max-width: em(700);

@@ -5,9 +5,10 @@
 <h1 class="header">This will be in Josefin Sans.</h1>
 */
 
-body { 
-  font: 100%/1.5 Montserrat, Helvetica, sans-serif;
-  }
+body {
+  font: $base-font Montserrat, Helvetica, sans-serif;
+  line-height: $base-lineheight;
+}
 
 
 .header,
@@ -17,24 +18,24 @@ body {
 }
 
 h1 {
-  font-size: 3rem;
-  line-height: 3rem;
-  margin-bottom: 1.5rem;
+  font-size: $big-font;
+  line-height: $big-font;
+  margin-bottom: $base-margin;
 }
 
 h2 {
-  font-size: 2.25rem;
-  line-height: 2.25rem;
-  margin-bottom: .67rem;
+  font-size: $medium-font;
+  line-height: $medium-font;
+  margin-bottom: floor(golden-ratio($base-margin, -1));
 }
 
 h3 {
-  font-size: 1.5rem;
-  line-height: 1.5rem;
-  margin-bottom: 1rem;
+  font-size: $base-font;
+  line-height: $base-font;
+  margin-bottom: floor(golden-ratio($base-margin, -1));
 }
 
 
 p {
-  margin-bottom: 1.5rem;
+  margin-bottom: $base-margin;
 }

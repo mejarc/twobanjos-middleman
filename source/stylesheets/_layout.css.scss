@@ -39,6 +39,17 @@
   margin-top: 2rem;
 }
 
+
+.roles {
+  list-style: none;
+  padding: 0;
+}
+
+.roles li {
+  display: inline-block;
+  margin-left: 0;
+}
+
 @media all and (min-width:480px){
   .wrapper.page {
     width: $max-width-medium;

@@ -17,6 +17,10 @@ body {
   text-transform: uppercase;
 }
 
+.header.plain {
+  text-transform: none;
+}
+
 h1 {
   font-size: $medium-font;
   line-height: $medium-font;

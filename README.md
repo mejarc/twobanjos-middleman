@@ -35,13 +35,13 @@ $ middleman build
 * Install [StyleDocco](http://jacobrask.github.io/styledocco/) as a Node package:
 
 ````
-npm install -fg styledocco
+$ npm install -fg styledocco
 ````
 
 * Generate the documentation from stylesheet comments.
 
 ````
-styledocco -n twobanjos source/stylesheets
+$ styledocco -n twobanjos source/stylesheets
 ````
 
 View the style guide at `docs/index.html`.

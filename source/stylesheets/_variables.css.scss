@@ -28,5 +28,6 @@ $base-margin: $base-font;
 $base-lineheight: ceil(golden-ratio($base-font, 1));
 
 $max-width-default: em(300);
-$max-width-medium: em(600);
-$max-width-large: em(700);
+$max-width-medium: em(450);
+$max-width-tween: em(670);
+$max-width-large: em(800);

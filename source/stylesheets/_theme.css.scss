@@ -7,7 +7,13 @@ a {
 }
 
 body {
-  background: linear-gradient($black 20%, $white 20%, $white 80%);
+  background-color: $white;
+  background-image: 
+  /* page header */ linear-gradient(to right, $black, $black), 
+/* page body */  linear-gradient(to right, $white, $white);
+  background-repeat: no-repeat;
+  background-position: 0 0, 0 130px, 0 100%;
+  background-size: 100% 130px, 100% 100%;
   color:  $text-color;
 }
 
@@ -31,7 +37,7 @@ a:hover, a:focus {
 }
 
 .nav {
-  background: $black;
+  background: transparent;
 }
 
 .nav .icon {
@@ -55,18 +61,26 @@ a:hover, a:focus {
   color: $nav-link-hover-text;
   text-shadow: $nav-link-hover-shadow;
 }
-
-@media all and (min-width: 481px){
+/*480 x 320 */
+@media all and (min-width: 479px){
   body {
-    background: linear-gradient($black 25%, $white 25%, $white 50%);
-    color:  $text-color;
+    background-position: 0 0, 0 95px,0 100%;
+    background-size: 100% 95px, 100% 100%;
   }
 }
 
-@media all and (min-width: 770px){
-    body {
-    background: linear-gradient($black 33%, $white 33%, $white 33%);
+@media all and (min-width: 768px){
+  body {
+    background-position: 0 0, 0 110px,0 100%;
+    background-size: 100% 110px, 100% 100%;
   }
+}
+
+@media all and (min-width: 1023px){
+  body {
+    background-position: 0 0, 0 200px,0 100%;
+    background-size: 100% 200px, 100% 100%;
+    }
 
   .nav .icon {
     color: $black;

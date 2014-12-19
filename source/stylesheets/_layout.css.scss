@@ -39,7 +39,19 @@
   margin-top: 2rem;
 }
 
-@media all and (min-width:768px){
+@media all and (min-width:480px){
+  .wrapper.page {
+    width: $max-width-medium;
+  }
+}
+
+@media all and (min-width:481px){
+  .wrapper.page {
+    width: $max-width-tween;
+  }
+}
+
+@media all and (min-width:769px){
   .wrapper.page {
     width: $max-width-large;
   }

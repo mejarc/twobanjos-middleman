@@ -47,7 +47,7 @@ describe 'About this web site', type: :feature do
   before { visit '/about-site.html' }
 
   it 'exists' do
-    expect(page).to have_content('About this web site')
+    expect(page).to have_content('About this site')
   end
 end
 

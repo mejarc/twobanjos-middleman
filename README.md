@@ -2,9 +2,6 @@
 
 The Two Banjos At Once web site, freed of PHP, re-expressed through [Middleman](). Four static pages.
 
-
-[Form Keeper]
-
 ##Installation
 
 ````
@@ -32,6 +29,22 @@ $ rake
 ````
 $ middleman build
 ````
+
+##Generating the style documentation
+
+* Install [StyleDocco](http://jacobrask.github.io/styledocco/) as a Node package:
+
+````
+npm install -fg styledocco
+````
+
+* Generate the documentation from stylesheet comments.
+
+````
+styledocco -n twobanjos source/stylesheets
+````
+
+View the style guide at `docs/index.html`.
 
 ##Acknowledgements
 

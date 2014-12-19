@@ -18,14 +18,14 @@ body {
 }
 
 h1 {
-  font-size: $big-font;
-  line-height: $big-font;
-  margin-bottom: $base-margin;
+  font-size: $medium-font;
+  line-height: $medium-font;
+  margin-bottom: floor(golden-ratio($base-margin, -1));
 }
 
 h2 {
-  font-size: $medium-font;
-  line-height: $medium-font;
+  font-size: $base-font;
+  line-height: $base-font;
   margin-bottom: floor(golden-ratio($base-margin, -1));
 }
 
@@ -38,4 +38,18 @@ h3 {
 
 p {
   margin-bottom: $base-margin;
+}
+
+/* Larger screens get bigger fonts
+*/
+@media all and (min-width: 481px){
+  h1 {
+    font-size: $big-font;
+    line-height: $big-font;
+  }
+
+  h2 {
+    font-size: $medium-font;
+    line-height: $medium-font;
+  }
 }

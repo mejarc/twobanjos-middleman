@@ -1,17 +1,24 @@
 
-$primary-color: #AA4639;
-$dark-primary-color: darken($primary-color, 10%);
-$lt-primary-color: lighten($primary-color, 10%);
+$white: #DCD8CF;
+$black: #282827;
+$gray: lighten($black, 70%);
+$red: #E25D33;
 
-$text-color: rgba( 51, 51, 51, 1);
-$default-link: tint($primary-color, 30%);
+$text-color: darken($black, 20%);
+$default-link: #368;
+$default-link-shadow: 0 1px 0 rgba($white, .4);
+
 $link-hover: rgba($text-color, .7);
+$link-hover-shadow: 0 1px 0 rgba($gray, .7);
 
-$header-shadow: 0 1px 0 darken($primary-color, 10%);
+$nav-link-color: $white;
+$nav-link-hover-background: lighten($red, .8);
+$nav-link-hover-text: $black;
+$nav-link-hover-shadow: 0 1px 0 rgba($default-link, .6);
 
-$white: rgba(255, 255, 255, 1);
-$gray: lighten($text-color, 70%);
-$accent: adjust-hue($primary-color, 20%);
+$header-color: $white;
+$header-shadow: 0 1px 2px $red;
+
 
 $big-font: floor(golden-ratio(12px, 3));
 $medium-font: floor(golden-ratio(12px, 2));
@@ -20,4 +27,6 @@ $base-font: 16px;
 $base-margin: $base-font;
 $base-lineheight: ceil(golden-ratio($base-font, 1));
 
-$max-width: em(700);
+$max-width-default: em(300);
+$max-width-medium: em(600);
+$max-width-large: em(700);

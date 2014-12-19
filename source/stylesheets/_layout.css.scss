@@ -13,7 +13,7 @@
   justify-content: center;
   margin: 0 auto;
   padding: 2vh 2vw;
-  width: $max-width;
+  width: $max-width-default;
 }
 
 /* Set page elements to 100% of viewport width.
@@ -23,14 +23,24 @@
 .main,
 .nav {
   flex: 1 100%;
+  flex-wrap: wrap;
 }
 
 /* Create blocks that evenly distribute along horizontal.
 */
 
 .item {
-  border: 1px solid blue;
   margin: 0;
   padding: 1.33rem;
   width: 100%;
+}
+
+.main {
+  margin-top: 2rem;
+}
+
+@media all and (min-width:768px){
+  .wrapper.page {
+    width: $max-width-large;
+  }
 }

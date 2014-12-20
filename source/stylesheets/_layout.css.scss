@@ -3,6 +3,7 @@
 .wrapper {
   box-sizing: border-box;
   display: flex;
+  flex: 1 100%;
   flex-flow: row wrap;
   margin: 0;
   padding: 0;
@@ -16,7 +17,8 @@
   width: $max-width-default;
 }
 
-/* Set page elements to 100% of viewport width.
+/* Flexbox layout.
+   Set page elements to 100% of viewport width.
 */
 .footer,
 .header,

@@ -1,11 +1,11 @@
 require "spec_helper"
 
+
 describe 'index', type: :feature do
   before do
    @yr = Time.now.year
     visit '/'
   end
-
  
   it 'has the current year in the footer' do
     footer = page.find('footer')
@@ -56,15 +56,15 @@ describe 'About this web site', type: :feature do
 end
 
 describe 'Showing and hiding navigation', type:  :feature do
-  before do
+  before(:all) do
     session = Capybara::Session.new(:selenium)
-    session.visit '/'
-    @window = session.current_window
+    session.visit 'http://localhost:4567/index.html'
+    @window = session.driver.browser.manage.window
   end
 
-  xit 'hides the navigation on screens < 769px wide' do
+  it 'hides the navigation on screens < 769px wide', js: true do
     @window.resize_to(600, 1024)
-    expect(page).to have_css('.visually-hidden', :visible => false)
+    expect(page).to have_css('.icon', visible: true)
   end
 
   # it 'shows the navigation on screens >= 768px wide' do

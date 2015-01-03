@@ -21,4 +21,5 @@ group :development do
   gem "rspec"
   gem "capybara"
   gem "simplecov"
+  gem 'selenium-webdriver'
 end

@@ -24,6 +24,12 @@ $ middleman server
 $ rake
 ````
 
+````
+$ casperjs test spec/features/responsive_spec.js
+````
+
+casperjs test /test/spec/responsive-Spec.js
+
 ##Building a production version
 
 ````
@@ -53,3 +59,4 @@ View the style guide at `docs/index.html`.
 - Inspiration by [the Golden Grid System](http://goldengridsystem.com/)
 - Helpful design patterns from [The A11Y Project](http://a11yproject.com/)
 - The fascinating [CSS easings tool](http://easings.net/) by Andrey Sitnik
+- [Responsive Web Design Test Automation](http://thejackalofjavascript.com/responsive-web-design-test-automation/) by Arvind Ravulavaru

@@ -1,11 +1,15 @@
 require "spec_helper"
 
 describe 'index', type: :feature do
-  before { visit '/' }
+  before do
+   @yr = Time.now.year
+    visit '/'
+  end
+
  
   it 'has the current year in the footer' do
     footer = page.find('footer')
-    expect(footer).to have_content('2014')
+    expect(footer).to have_content(@yr)
   end
 end
 
@@ -16,15 +20,15 @@ describe 'Navigation', type: :feature do
   end
 
   it 'has a link to the About Me page' do
-    expect(@nav).to have_link('About me', href: '/about-me.html')
+    expect(@nav).to have_link('About me', href: '/about-me')
   end
 
   it 'has a link to the About this Web Site page' do
-    expect(@nav).to have_link('About this web site', href: '/about-site.html')
+    expect(@nav).to have_link('About this web site', href: '/about-site')
   end
 
   it 'has a link to the Portfolio page' do
-    expect(@nav).to have_link('Portfolio', href: '/portfolio.html')
+    expect(@nav).to have_link('Portfolio', href: '/portfolio')
   end
 
   it 'has link to the About.me contact page' do
@@ -47,8 +51,24 @@ describe 'About this web site', type: :feature do
   before { visit '/about-site.html' }
 
   it 'exists' do
-    expect(page).to have_content('About this site')
+    expect(page).to have_content('About this web site')
   end
 end
 
+describe 'Showing and hiding navigation', type:  :feature do
+  before do
+    session = Capybara::Session.new(:selenium)
+    session.visit '/'
+    @window = session.current_window
+  end
 
+  xit 'hides the navigation on screens < 769px wide' do
+    @window.resize_to(600, 1024)
+    expect(page).to have_css('.visually-hidden', :visible => false)
+  end
+
+  # it 'shows the navigation on screens >= 768px wide' do
+  #   current_window.resize_to(768, 1024)
+  #   expect(@hidden).to be_true
+  # end
+end

@@ -7,6 +7,9 @@
 .nav .icon {
   font-size: 3rem;
   line-height: .02rem;
+  position: absolute;
+  top: $medium-font * 1.25;
+  right: 4vw;
 }
 
 .nav .icon:before {

@@ -6,7 +6,7 @@ title: Portfolio
 <dl>
 <% data.portfolio.recent.each do |site| %>
  <dt>
-  <%= link_to site[1]['name'], site[1]['url'] %>
+  <%= link_to site[1]['name'], "//#{site[1]['url']}" %>
   </dt>
  <dd>
   <p><%= site[1]['description'] %></p>
@@ -22,7 +22,7 @@ title: Portfolio
 <dl>
 <% data.portfolio.less_recent.each do |site| %>
  <dt>
-  <%= link_to site[1]['name'], site[1]['url'] %>
+  <%= link_to site[1]['name'], "//#{site[1]['url']}" %>
   </dt>
  <dd>
   <p><%= site[1]['description'] %></p>
@@ -34,7 +34,6 @@ title: Portfolio
  </dd>
 <% end %>
 </dl>
-
 <h2 class="header plain">R.I.P.</h2>
 <dl>
 <% data.portfolio.rip.each do |site| %>

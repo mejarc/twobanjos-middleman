@@ -63,20 +63,40 @@ dd p {
   border: 1px solid $gray;
 }
 
-.nav .item:hover{
+.nav .item:hover {
   background-color: $nav-link-hover-background;
 }
 
+.nav .item,
 .nav .item a {
   color: $nav-link-color;
   text-shadow: $nav-link-shadow;
 }
 
+.nav .item:hover,
 .nav .item a:hover {
   color: $nav-link-hover-text;
   text-shadow: $nav-link-hover-shadow;
 }
 
+
+/* Active states for navigation links.
+*/
+.about-me a[href^="/about-me"],
+.about-site a[href^="/about-site"],
+.portfolio a[href^="/portfolio"]{
+  color: $nav-link-hover-text;
+  text-shadow: $nav-link-hover-shadow;
+}
+
+.about-me .item:nth-of-type(1),
+.about-site .item:nth-of-type(3),
+.portfolio .item:nth-of-type(2){
+  background-color: $nav-link-active-background;
+}
+
+/* styling Roles on Portfolio page.
+*/
 .roles li {
   background: lighten($blue, 20%);
   border: 1px solid $gray;
@@ -85,9 +105,8 @@ dd p {
   padding: .5rem;
 }
 
-
-/* styling Roles on Portfolio page
-*/
+/* Responsive navigation styles.
+**/
 @media all and (min-width: 479px){
   body {
     background-position: 0 0, 0 95px,0 100%;

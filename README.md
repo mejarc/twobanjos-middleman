@@ -28,8 +28,6 @@ $ rake
 $ casperjs test spec/features/responsive_spec.js
 ````
 
-casperjs test /test/spec/responsive-Spec.js
-
 ##Building a production version
 
 ````

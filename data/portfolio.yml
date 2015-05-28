@@ -12,7 +12,7 @@ less_recent:
     name: "Nexant TrakSmart"
     role:
       - css
-    url: nexant.com/ESS/product_traksmart.aspx
+    url: nexant.com/
   smartleaf:
     description: "I created interface elements for a remarkably abstruse application for some obscure form of investing you and I will probably never make. Really gained appreciation for what genius interface designers like Gino Lee can do with such difficult requirements."
     name: Smartleaf
@@ -34,7 +34,7 @@ less_recent:
       - jquery
       - css
       - rails
-    url: limos.com
+    url: limos.com/
   tripit:
     description: "Joined two other developers and the two company founders at one big table; found this to be a really productive and satisfying setup. Lots of quick changes to Symfony (PHP) templates in CSS and YUI JavaScript modules."
     name: TripIt
@@ -43,7 +43,13 @@ less_recent:
       - javascript
       - php
     url: tripit.com
-recent: 
+recent:
+  autonot:
+    description: "Irritated into action by HTML5's <code>autoplay</code> attribute, I built a Chrome browser extension to zap them from a web page."
+    name: "Auto-not"
+    role:
+      - javascript
+    url: https://github.com/mejarc/auto-not
   errands: 
     description: "I joined three other Dev Bootcamp students for our final project,  a mobile-first Rails application helping the user find places  to fulfill her errands along a given route. I pair-programmed with  each of my teammates Jason, Christine, and Ryan in a very satisfying  week of test-driven development.\n"
     name: "Errands On The Way"

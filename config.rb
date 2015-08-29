@@ -55,6 +55,9 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+sprockets.append_path File.join root, 'bower_components'
+sprockets.import_asset 'include-media'
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment

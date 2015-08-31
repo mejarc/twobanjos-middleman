@@ -49,7 +49,7 @@ recent:
     name: "Auto-not"
     role:
       - javascript
-    url: https://github.com/mejarc/auto-not
+    url: github.com/mejarc/auto-not
   errands: 
     description: "I joined three other Dev Bootcamp students for our final project,  a mobile-first Rails application helping the user find places  to fulfill her errands along a given route. I pair-programmed with  each of my teammates Jason, Christine, and Ryan in a very satisfying  week of test-driven development."
     name: "Errands On The Way"

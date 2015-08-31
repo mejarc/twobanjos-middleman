@@ -12,8 +12,8 @@ body {
 /* page header: a dark-color band to the full width of the screen */ linear-gradient(to right, $black, $black), 
 /* page body: lighter color to end of viewport */  linear-gradient(to right, $white, $white);
   background-repeat: no-repeat;
-  background-position: 0 0, 0 130px, 0 100%;
-  background-size: 100% 130px, 100% 100%;
+  background-position: 0 0, 0 $header-height-default, 0 100%;
+  background-size: 100% $header-height-default, 100% 100%;
   color:  $text-color;
 }
 
@@ -107,24 +107,24 @@ dd p {
 
 /* Responsive navigation styles.
 **/
-@media all and (min-width: 479px){
+
+@include media(">phone", "<736px", "landscape"){
+    body {
+    background-position: 0 0, 0 $header-height-default * .7, 0 100%;
+    background-size: 100% $header-height-default * .7, 100% 100%;
+  }
+}
+@include media(">=tablet"){
   body {
-    background-position: 0 0, 0 95px,0 100%;
-    background-size: 100% 95px, 100% 100%;
+    background-position: 0 0, 0 $header-height-ipad,0 100%;
+    background-size: 100% $header-height-ipad, 100% 100%;
   }
 }
 
-@media all and (min-width: 768px){
+@include media(">tablet"){
   body {
-    background-position: 0 0, 0 170px,0 100%;
-    background-size: 100% 170px, 100% 100%;
-  }
-}
-
-@media all and (min-width: 1023px){
-  body {
-    background-position: 0 0, 0 200px,0 100%;
-    background-size: 100% 200px, 100% 100%;
+    background-position: 0 0, 0 $header-height-largest,0 100%;
+    background-size: 100% $header-height-largest, 100% 100%;
     }
 
   .nav .icon {

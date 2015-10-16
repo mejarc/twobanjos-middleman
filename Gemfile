@@ -16,7 +16,7 @@ gem "tzinfo-data", platforms: [:mswin, :mingw]
 gem "jquery-middleman"
 gem "bourbon"
 
-group :development do
+group :development, :test do
   gem "rake"
   gem "rspec"
   gem "capybara"

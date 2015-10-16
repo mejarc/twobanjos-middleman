@@ -67,8 +67,8 @@ describe 'Showing and hiding navigation', type:  :feature do
     expect(page).to have_css('.icon', visible: true)
   end
 
-  # it 'shows the navigation on screens >= 768px wide' do
-  #   current_window.resize_to(768, 1024)
-  #   expect(@hidden).to be_true
-  # end
+  it 'shows the navigation on screens >= 768px wide' do
+    current_window.resize_to(768, 1024)
+    expect(@hidden).to be_true
+  end
 end

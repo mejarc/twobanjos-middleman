@@ -1,19 +1,20 @@
 /* Mobile-first navigation. Show "hamburger" icon by default.
 */
+//noinspection ALL
 .nav {
   margin-top: $base-margin;
 }
 
 .nav .icon {
   font-size: 3rem;
-  line-height: .02rem;
+  line-height: 0.02rem;
   position: absolute;
   top: $medium-font * 1.25;
   right: 4vw;
 }
 
 .nav .icon:before {
-  content: "\2261";
+  content: '\2261';
   display: block;
 }
 
@@ -30,6 +31,7 @@
   position: absolute;
   top: 1.33rem; 
   width: 1px;
+  /*noinspection CssOverwrittenProperties,CssOverwrittenProperties,CssOverwrittenProperties,CssOverwrittenProperties*/
   transition: height 0.4s ease-in;
   transition: width 0.15s linear;
 }

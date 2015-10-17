@@ -1,22 +1,22 @@
 
-$white: #DCD8CF;
+$white: #dcd8cf;
 $black: #282827;
 $gray: lighten($black, 70%);
-$red: #E25D33;
+$red: #e25d33;
 $blue: #368;
 
 $text-color: darken($black, 20%);
 $default-link: $blue;
-$default-link-shadow: 0 1px 0 rgba($white, .4);
+$default-link-shadow: 0 1px 0 rgba($white, 0.4);
 
-$link-hover: rgba($text-color, .7);
-$link-hover-shadow: 0 1px 0 rgba($gray, .7);
+$link-hover: rgba($text-color, 0.7);
+$link-hover-shadow: 0 1px 0 rgba($gray, 0.7);
 
 $nav-link-color: $white;
 $nav-link-shadow: 0 1px 0 $black;
 $nav-link-hover-background: lighten($red, 5%);
 $nav-link-hover-text: $black;
-$nav-link-hover-shadow: 0 1px 0 rgba($default-link, .6);
+$nav-link-hover-shadow: 0 1px 0 rgba($default-link, 0.6);
 $nav-link-active-background: mix($red, $blue, 10%);
 
 $header-color: $white;

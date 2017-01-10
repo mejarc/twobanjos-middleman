@@ -1,19 +1,18 @@
-/* Establishes the font faces in use for text and display.
+/* Establishes the font face in use.
 
-<p>This will be in Montserrat.</p>
+<p>This will be in Raleway.</p>
 
-<h1 class="header">This will be in Josefin Sans.</h1>
+<h1 class="header">This will also be in Raleway.</h1>
 */
 
 body {
-  font: $base-font Montserrat, Helvetica, sans-serif;
+  font: $base-font 'Raleway', Helvetica, sans-serif;
   line-height: $base-lineheight;
 }
 
 
 .header,
 .nav {
-  font-family: 'Josefin Sans', sans-serif;
   text-transform: uppercase;
 }
 

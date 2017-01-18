@@ -6,7 +6,7 @@
 */
 
 body {
-  font: $base-font 'Raleway', Helvetica, sans-serif;
+  font-family: 'Raleway', Helvetica, sans-serif;
   line-height: $base-lineheight;
 }
 
@@ -22,20 +22,16 @@ body {
 
 h1 {
   font-size: $medium-font;
-  line-height: $medium-font;
-  margin-bottom: floor(golden-ratio($base-margin, -1));
+  margin-bottom: floor(modular-scale($base-margin, -1));
 }
 
 h2 {
   font-size: $base-font;
-  line-height: $base-font;
-  margin-bottom: floor(golden-ratio($base-margin, -1));
+  margin-bottom: floor(modular-scale($base-margin, -1));
 }
 
 h3 {
   font-size: $base-font;
-  line-height: $base-font;
-  margin-bottom: floor(golden-ratio($base-margin, -1));
 }
 
 
@@ -48,12 +44,10 @@ p {
 @media all and (min-width: 770px){
   h1 {
     font-size: $big-font;
-    line-height: $big-font;
   }
 
   h2 {
     font-size: $medium-font;
-    line-height: $medium-font;
   }
 }
 

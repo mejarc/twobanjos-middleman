@@ -1,6 +1,6 @@
 #twobanjos-middleman
 
-The Two Banjos At Once web site, freed of PHP, re-expressed through [Middleman](). Four static pages.
+The Two Banjos At Once web site, freed of PHP, re-expressed through [Middleman](). Three static pages.
 
 ##Installation
 

@@ -1,15 +1,11 @@
 /* Mobile-first navigation. Show "hamburger" icon by default.
 */
 //noinspection ALL
-.nav {
-  margin-top: $base-margin;
-}
 
 .nav .icon {
   font-size: 3rem;
   line-height: 0.02rem;
   position: absolute;
-  top: $medium-font * 1.25;
   right: 4vw;
 }
 
@@ -45,7 +41,7 @@
 
 /* Larger screens will have the navigation at the top.
 */
-@media all and (min-width: 768px){
+@media all and (min-width: 769px){
   .item {
     display: inline-block;
     margin: 0 0.2vw 0 0;

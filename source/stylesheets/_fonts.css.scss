@@ -22,12 +22,10 @@ body {
 
 h1 {
   font-size: $medium-font;
-  margin-bottom: floor(modular-scale($base-margin, -1));
 }
 
 h2 {
   font-size: $base-font;
-  margin-bottom: floor(modular-scale($base-margin, -1));
 }
 
 h3 {

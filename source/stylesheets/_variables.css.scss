@@ -1,3 +1,5 @@
+$modular-scale-ratio: $perfect-fourth;
+$modular-scale-base: 1.2em;
 
 $white: #dcd8cf;
 $black: #282827;
@@ -26,12 +28,12 @@ $header-height-default: 95px;
 $header-height-ipad: 170px;
 $header-height-largest: 200px;
 
-$big-font: floor(golden-ratio(12px, 3));
-$medium-font: floor(golden-ratio(12px, 2));
-$base-font: 16px;
+$base-font: 1;
+$big-font: modular-scale(3);
+$medium-font: modular-scale(2);
 
-$base-margin: $base-font;
-$base-lineheight: ceil(golden-ratio($base-font, 1));
+$base-margin: 12;
+$base-lineheight: modular-scale(2);
 
 $max-width-default: em(300);
 $max-width-medium: em(450);

@@ -1,6 +1,6 @@
 #twobanjos-middleman
 
-The Two Banjos At Once web site, freed of PHP, re-expressed through [Middleman](). Four static pages.
+The Two Banjos At Once web site, freed of PHP, re-expressed through [Middleman](). Three static pages.
 
 ##Installation
 
@@ -54,7 +54,7 @@ View the style guide at `docs/index.html`.
 
 - Much, much appreciation to [Simon Rice](https://github.com/simonrice), for the [Middleman-RSec](https://github.com/simonrice/middleman-rspec) example.
 - The great advice on setting up a typographic grid by [Joshua Hibbert](http://joshnh.com/2011/08/03/how-to-set-up-a-baseline-grid/)
-- Inspiration by [the Golden Grid System](http://goldengridsystem.com/)
+- Inspiration from David Kadavy, [Design for Hackers](http://designforhackers.com/)
 - Helpful design patterns from [The A11Y Project](http://a11yproject.com/)
 - The fascinating [CSS easings tool](http://easings.net/) by Andrey Sitnik
 - [Responsive Web Design Test Automation](http://thejackalofjavascript.com/responsive-web-design-test-automation/) by Arvind Ravulavaru

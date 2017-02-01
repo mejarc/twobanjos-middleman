@@ -97,3 +97,19 @@ dd p {
   color: $white;
   padding: 0.5rem;
 }
+// Noon
+
+.noon {
+  background: $background-noon;
+  color: $color-noon;
+
+ a {
+  color: $link-noon;
+  &:hover {
+    color: $hover-noon;
+  }
+ }
+ .header {
+  text-shadow: 0 2px 2px $shadow-noon; 
+ }
+}

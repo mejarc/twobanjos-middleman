@@ -39,11 +39,12 @@ dd p {
 }
 
 .header.plain {
-  text-shadow: none;
 }
 
 .main .header {
   color: $black;
+  text-shadow: none;
+
 }
 
 .nav {
@@ -57,6 +58,10 @@ dd p {
 /*noinspection CssOptimizeSimilarProperties,CssOptimizeSimilarProperties*/
 .nav .item {
   border: 1px solid $gray;
+  &:hover {
+    background: $nav-link-hover-background;
+    color: $nav-link-hover-text;
+  }
 }
 
 .nav .item,

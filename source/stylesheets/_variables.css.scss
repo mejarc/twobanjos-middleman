@@ -10,18 +10,18 @@ $text-color: darken($black, 20%);
 $default-link: $black;
 $default-link-shadow: 0 1px 0 rgba($blue, 0.4);
 
-$link-hover: rgba($text-color, 0.7);
-$link-hover-shadow: 0 1px 0 rgba($gray, 0.7);
+$link-hover: rgba($blue, 0.7);
+$link-hover-shadow: 0 1px 0 rgba($blue, 0.9);
 
 $nav-link-color: $black;
-$nav-link-shadow: 0 1px 0 $black;
-$nav-link-hover-background: lighten($blue, 25%);
-$nav-link-active-background: darken($blue, 5%);
-$nav-link-hover-text: $gray;
+$nav-link-shadow: 0 1px 0 $gray;
+$nav-link-active-background: lighten($blue, 15%);
+$nav-link-hover-background: darken($blue, 5%);
+$nav-link-hover-text: lighten($text-color, 33%);
 $nav-link-hover-shadow: 0 1px 0 rgba($default-link, 0.6);
 
 $header-color: $white;
-$header-shadow: 0 1px 2px $black;
+$header-shadow: 1px 1px 2px $black;
 
 $header-height-default: 95px;
 $header-height-ipad: 170px;

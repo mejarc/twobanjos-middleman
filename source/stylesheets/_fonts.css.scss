@@ -10,15 +10,10 @@ body {
   line-height: $base-lineheight;
 }
 
-
-.header,
 .nav {
   text-transform: uppercase;
 }
 
-.header.plain {
-  text-transform: none;
-}
 
 h1 {
   font-size: $medium-font;
@@ -40,7 +35,7 @@ p {
 /* Larger screens get bigger fonts
 */
 @media all and (min-width: 770px){
-  h1 {
+  header h1 {
     font-size: $big-font;
   }
 

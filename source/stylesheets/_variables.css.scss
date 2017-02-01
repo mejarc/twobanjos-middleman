@@ -1,28 +1,27 @@
 $modular-scale-ratio: $perfect-fourth;
 $modular-scale-base: 1.2em;
 
-$white: #dcd8cf;
+$white: #fff;
 $black: #282827;
 $gray: lighten($black, 70%);
-$red: #e25d33;
-$blue: #368;
+$blue: #aadbdf;
 
 $text-color: darken($black, 20%);
-$default-link: $blue;
-$default-link-shadow: 0 1px 0 rgba($white, 0.4);
+$default-link: $black;
+$default-link-shadow: 0 1px 0 rgba($blue, 0.4);
 
-$link-hover: rgba($text-color, 0.7);
-$link-hover-shadow: 0 1px 0 rgba($gray, 0.7);
+$link-hover: rgba($blue, 0.7);
+$link-hover-shadow: 0 1px 0 rgba($blue, 0.9);
 
-$nav-link-color: $white;
-$nav-link-shadow: 0 1px 0 $black;
-$nav-link-hover-background: lighten($red, 5%);
-$nav-link-hover-text: $black;
+$nav-link-color: $black;
+$nav-link-shadow: 0 1px 0 $gray;
+$nav-link-active-background: lighten($blue, 15%);
+$nav-link-hover-background: darken($blue, 5%);
+$nav-link-hover-text: lighten($text-color, 33%);
 $nav-link-hover-shadow: 0 1px 0 rgba($default-link, 0.6);
-$nav-link-active-background: mix($red, $blue, 10%);
 
 $header-color: $white;
-$header-shadow: 0 1px 2px $red;
+$header-shadow: 1px 1px 2px $black;
 
 $header-height-default: 95px;
 $header-height-ipad: 170px;
@@ -39,3 +38,11 @@ $max-width-default: em(300);
 $max-width-medium: em(450);
 $max-width-tween: em(670);
 $max-width-large: em(800);
+
+
+// Noon
+$background-noon: linear-gradient(to bottom, rgba(70, 113, 213, 0.8) 75%, rgba(191, 113, 48, 0.8)) fixed;
+$color-noon: #06266f;
+$link-noon: #ff9640;
+$hover-noon: #ffd300;
+$shadow-noon: #2a4480;

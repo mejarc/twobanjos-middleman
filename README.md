@@ -52,7 +52,7 @@ View the style guide at `docs/index.html`.
 
 ##Acknowledgements
 
-- Much, much appreciation to [Simon Rice](https://github.com/simonrice), for the [Middleman-RSec](https://github.com/simonrice/middleman-rspec) example.
+- Much, much appreciation to [Simon Rice](https://github.com/simonrice), for the [Middleman-RSpec](https://github.com/simonrice/middleman-rspec) example.
 - The great advice on setting up a typographic grid by [Joshua Hibbert](http://joshnh.com/2011/08/03/how-to-set-up-a-baseline-grid/)
 - Inspiration from David Kadavy, [Design for Hackers](http://designforhackers.com/)
 - Helpful design patterns from [The A11Y Project](http://a11yproject.com/)

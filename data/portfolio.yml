@@ -91,14 +91,6 @@ recent:
       - css
       - php
     url: www.sungevity.com/get-your-iquote/
-  spreecast:
-    description: "One of those rapid-fire, pre-beta startup development projects--worked with four other developers to solve the complex problem of delivering streaming video chat using Rails and Node.js. Decided to use Blueprint CSS, and everybody was glad."
-    name: Spreecast
-    role:
-      - jquery
-      - html5
-      - css
-    url: spreecast.com
 rip:
   vox:
     description: "Sigh. This was a great project: to separate markup and design so completely that a user could change her blog theme with the click of one button. We were clobbered by Facebook."
@@ -119,4 +111,12 @@ rip:
       - css
       - php
       - html
+  spreecast:
+    description: "One of those rapid-fire, pre-beta startup development projects--worked with four other developers to solve the complex problem of delivering streaming video chat using Rails and Node.js. Decided to use Blueprint CSS, and everybody was glad."
+    name: Spreecast
+    role:
+      - jquery
+      - html5
+      - css
+    url: spreecast.com
 

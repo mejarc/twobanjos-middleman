@@ -1,59 +1,42 @@
-/* Sets up a flexbox layout. 
+/* Sets up a grid layout. 
 */
-.wrapper {
-  box-sizing: border-box;
-  display: flex;
-  flex: 1 100%;
-  flex-flow: row wrap;
-  margin: 0;
-  padding: 0;
-}
 
-
-.wrapper.page {
-  justify-content: center;
+.page {
+  display: grid;
+  grid-gap: 1em;
+  justify-items: center;
   margin: 0 auto;
   padding: 2vh 2vw;
-  width: $max-width-default;
 }
 
-/* Flexbox layout.
-   Set page elements to 100% of viewport width.
+nav {
+  ul {
+    display: grid;
+    grid-column-gap: 1em;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    list-style: none;
+  }
+}
+
+/* Portfolio page.
 */
-.footer,
-.header,
-.main,
-.nav {
-  flex: 1 100%;
-  flex-wrap: wrap;
-}
-
-/* Create blocks that evenly distribute along horizontal.
-*/
-
-.item {
-  margin: 0;
-  padding: 1.33rem;
-  width: 100%;
-}
-
-.main {
-  margin-top: 2rem;
-}
-
 
 .roles {
   list-style: none;
   padding: 0;
+  li {
+    display: inline-block;
+    margin-left: 0;
+  }
 }
 
-.roles li {
-  display: inline-block;
-  margin-left: 0;
-}
-
+/* 
 @media all and (min-width:480px){
-  .wrapper.page {
+.wrapper.page {
     width: $max-width-medium;
   }
 }
@@ -70,3 +53,4 @@
   }
 }
 
+*/

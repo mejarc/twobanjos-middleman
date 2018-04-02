@@ -20,7 +20,6 @@ less_recent:
       - html5
       - css
       - jquery
-    url: tempdub.smartleaf.com/what-we-do/details
   smartfm:
     description: "Was given carte blanche to ignore all versions of Internet Explorer, and subequently went crazy with standard and vendor-prefixed CSS3 for a hip language-learning application with a demanding user base of Japanese teenagers."
     name: Smart.fm
@@ -50,17 +49,6 @@ recent:
     role:
       - javascript
     url: github.com/mejarc/auto-not
-  errands: 
-    description: "I joined three other Dev Bootcamp students for our final project,  a mobile-first Rails application helping the user find places  to fulfill her errands along a given route. I pair-programmed with  each of my teammates Jason, Christine, and Ryan in a very satisfying  week of test-driven development."
-    name: "Errands On The Way"
-    role: 
-      - rails
-      - ruby
-      - css
-      - javascript
-      - rspec
-      - jasmine
-    url: errandsontheway.com
   ge: 
     description: "Wrangled an ornery herd of Grunt scripts, Bower packages,  and Twitter Bootstrap forks into the  <a href=\"http://www.creativebloq.com/netmag/using-bootstrap-complex-design-systems-7133781\">Industrial Internet Design System (IIDS)</a>, a framework of browser-side components for Java and .NET developers  to use in their applications.\n"
     name: "GE Global Research"
@@ -90,7 +78,7 @@ recent:
     role:
       - css
       - php
-    url: www.sungevity.com/get-your-iquote/
+    url: www.sungevity.com
 rip:
   vox:
     description: "Sigh. This was a great project: to separate markup and design so completely that a user could change her blog theme with the click of one button. We were clobbered by Facebook."
@@ -98,6 +86,17 @@ rip:
     role:
       - css
       - html
+  errands: 
+    description: "I joined three other Dev Bootcamp students for our final project,  a mobile-first Rails application helping the user find places  to fulfill her errands along a given route. I pair-programmed with  each of my teammates Jason, Christine, and Ryan in a very satisfying  week of test-driven development."
+    name: "Errands On The Way"
+    role: 
+      - rails
+      - ruby
+      - css
+      - javascript
+      - rspec
+      - jasmine
+    url: errandsontheway.com
   cchs:
     description: "Bilingual (English/Spanish) site for a nonprofit group in California's 11th Congressional district. I worked with yet another attractive design by <a href=\"//www.behance.net/rolfwilkinson\">Rolf Wilkinson</a>."
     name: "Citizens for Community Health and Sustainability"
@@ -105,7 +104,7 @@ rip:
       - css
       - html
   zinkle:
-    description: "A search engine for children. Really! Designer <a href=\"//tinyporchlight.com\">Rachael Schafer</a> ditched stereotypical screaming primary colors and drew cartoon critters instead. It really was endearing. All the results kid-appropriate."
+    description: "A search engine for children. Really! Designer Rachael Schafer ditched stereotypical screaming primary colors and drew cartoon critters instead. It really was endearing. All the results kid-appropriate."
     name: Zinkle
     role:
       - css

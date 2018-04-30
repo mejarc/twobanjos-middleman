@@ -1,85 +1,65 @@
-
 /* Colors and effects.
 */
+
 a {
   transition: all 0.8s ease;
   text-shadow: $default-link-shadow;
-}
-
-/*noinspection CssOptimizeSimilarProperties,CssOptimizeSimilarProperties,CssOptimizeSimilarProperties,CssOptimizeSimilarProperties*/
-body {
-  /*noinspection CssOptimizeSimilarProperties*/
-  background-color: $blue;
-  color: $text-color;
-}
-
-a {
   color: $default-link;
   text-decoration: none;
+  &:hover,
+  &:focus {
+    color: $link-hover;
+    text-shadow: $link-hover-shadow;
+  }
 }
 
-a:hover,
-a:focus {
-  color: $link-hover;
-  text-shadow: $link-hover-shadow;
+body {
+  background-color: $blue;
+  color: $text-color;
 }
 
 dd {
   margin-bottom: $base-margin * 3;
   margin-left: 0;
+  p {
+    margin-top: 0;
+  }
 }
 
-dd p {
-  margin-top: 0;
-}
-
-.header {
+header {
   color: $white;
   text-shadow: $header-shadow;
 }
 
-.header.plain {
-}
-
-.main .header {
-  color: $black;
-  text-shadow: none;
-
-}
-
-.nav {
-  background: transparent;
-}
-
-.nav .icon {
-  color: $white;
-}
-
-/*noinspection CssOptimizeSimilarProperties,CssOptimizeSimilarProperties*/
-.nav .item {
-  border: 1px solid $gray;
-  &:hover {
-    background: $nav-link-hover-background;
-    color: $nav-link-hover-text;
+main {
+  header {
+    color: $black;
+    text-shadow: none;
   }
 }
 
-.nav .item,
-.nav .item a {
-  color: $nav-link-color;
-  text-shadow: $nav-link-shadow;
+nav {
+  background: transparent;
+  .icon {
+    color: $white;
+  }
+  .item {
+    border: 1px solid $gray;
+    &:hover {
+      background: $nav-link-hover-background;
+      color: $nav-link-hover-text;
+    }
+    &,
+    & a {
+      color: $nav-link-color;
+      text-shadow: $nav-link-shadow;
+    }
+  }
 }
-
-.nav .item:hover,
-.nav .item a:hover {
-  color: $nav-link-hover-text;
-  text-shadow: $nav-link-hover-shadow;
-}
-
 
 /* Active states for navigation links.
 */
-//noinspection ScssLintInspection,ScssLintInspection,ScssLintInspection,ScssLintInspection,ScssLintInspection,ScssLintInspection
+
 .about-me a[href^="/about-me"],
 .about-site a[href^="/about-site"],
 .portfolio a[href^="/portfolio"] {
@@ -95,25 +75,12 @@ dd p {
 
 /* styling Roles on Portfolio page.
 */
-.roles li {
-  background: lighten($blue, 20%);
-  border: 1px solid $gray;
-  border-radius: 0.25rem;
-  padding: 0.5rem;
-}
-// Noon
 
-.noon {
-  background: $background-noon;
-  color: $color-noon;
-
- a {
-  color: $link-noon;
-  &:hover {
-    color: $hover-noon;
+.roles {
+  li {
+    background: lighten($blue, 20%);
+    border: 1px solid $gray;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
   }
- }
- .header {
-  text-shadow: 0 2px 2px $shadow-noon; 
- }
 }

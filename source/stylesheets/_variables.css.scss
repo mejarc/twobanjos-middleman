@@ -4,13 +4,14 @@ $white: #fff;
 $black: #282827;
 $gray: lighten($black, 70%);
 $blue: #aadbdf;
+$pink: rgba(250, 126, 120, 0.7);
 
 $text-color: darken($black, 20%);
 $default-link: $black;
 $default-link-shadow: 0 1px 0 rgba($blue, 0.4);
 
-$link-hover: lighten($text-color, 33%);
-$link-hover-shadow: 0 1px 0 rgba($default-link, 0.6);
+$link-hover: $default-link;
+$link-hover-shadow: 1px 1px 5px $pink;
 
 $nav-link-color: $black;
 $nav-link-shadow: 0 1px 0 $gray;

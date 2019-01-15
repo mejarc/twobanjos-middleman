@@ -1,6 +1,6 @@
 # twobanjos-middleman
 
-The Two Banjos At Once web site, freed of PHP, re-expressed through [Middleman](). Three static pages.
+The Two Banjos At Once web site, freed of PHP, re-expressed through [Middleman](https://github.com/middleman/middleman). Three static pages.
 
 ## Installation
 
@@ -15,7 +15,7 @@ $ bundle
 ## Starting the server<a name="server"></a>
 
 ````
-$ middleman server
+$ bundle exec middleman server
 ````
 
 ## Running the tests

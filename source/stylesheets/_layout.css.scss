@@ -4,7 +4,7 @@
 .page {
   display: grid;
   grid-gap: 1em;
-  padding: 2vh 2vw;
+  padding: 2vw;
 }
 header {
   grid-row-start: 2;
@@ -34,24 +34,3 @@ nav {
     margin-left: 0;
   }
 }
-
-/* 
-@media all and (min-width:480px){
-.wrapper.page {
-    width: $max-width-medium;
-  }
-}
-
-@media all and (min-width:481px){
-  .wrapper.page {
-    width: $max-width-tween;
-  }
-}
-
-@media all and (min-width:769px){
-  .wrapper.page {
-    width: $max-width-large;
-  }
-}
-
-*/

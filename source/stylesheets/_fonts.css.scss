@@ -1,15 +1,14 @@
 /* Establishes the font face in use.
-
-<p>This will be in Raleway.</p>
-
-<h1>This will also be in Raleway.</h1>
 */
 
 body {
-  font-family: 'Raleway', Helvetica, sans-serif;
+  font-family: 'Abel', sans-serif;
 }
 
-nav {
+nav,
+h1, 
+h2,
+dt {
   text-transform: uppercase;
 }
 

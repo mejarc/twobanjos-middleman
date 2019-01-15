@@ -3,46 +3,42 @@
 $white: #fff;
 $black: #282827;
 $gray: lighten($black, 70%);
-$blue: #aadbdf;
-$pink: rgba(250, 126, 120, 0.7);
+$blue: rgba(38,48, 86, 1);
+$living-coral: rgb(255, 111, 97);
+$storm: rgba(181,186,182,.75);
+$beluga: rgb(74, 72, 67);
+$golden-lime: rgb(154, 151, 56);
 
-$text-color: darken($black, 20%);
-$default-link: $black;
+
+$text-color: $beluga;
+$default-link: $blue;
 $default-link-shadow: 0 1px 0 rgba($blue, 0.4);
 
 $link-hover: $default-link;
-$link-hover-shadow: 1px 1px 5px $pink;
+$link-hover-shadow: 1px 1px 5px $golden-lime;
 
-$nav-link-color: $black;
-$nav-link-shadow: 0 1px 0 $gray;
+$nav-link-color: $blue;
+$nav-link-shadow: $default-link-shadow;
 $nav-link-active-background: lighten($blue, 15%);
 $nav-link-hover-background: darken($blue, 5%);
 $nav-link-hover-text: $link-hover;
 $nav-link-hover-shadow: $link-hover-shadow;
 
 $header-color: $white;
-$header-shadow: 1px 1px 2px $black;
+$header-shadow: 1px 1px 2px $blue;
 
 $header-height-default: 95px;
 $header-height-ipad: 170px;
 $header-height-largest: 200px;
 
-$base-font: 1;
-$big-font: 2.25;
-$medium-font: 1.5;
+$base-font: 1em;
+$big-font: 2.25em;
+$medium-font: 1.5em;
 
-$base-margin: 12;
-$base-lineheight: 1.5;
+$base-margin: 12px;
+$base-lineheight: 1.5em;
 
 $max-width-default: em(300);
 $max-width-medium: em(450);
 $max-width-tween: em(670);
 $max-width-large: em(800);
-
-
-// Noon
-$background-noon: linear-gradient(to bottom, rgba(70, 113, 213, 0.8) 75%, rgba(191, 113, 48, 0.8)) fixed;
-$color-noon: #06266f;
-$link-noon: #ff9640;
-$hover-noon: #ffd300;
-$shadow-noon: #2a4480;

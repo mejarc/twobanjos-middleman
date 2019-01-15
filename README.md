@@ -15,7 +15,7 @@ $ bundle
 ## Starting the server<a name="server"></a>
 
 ````
-$ middleman server
+$ bundle exec middleman server
 ````
 
 ## Running the tests

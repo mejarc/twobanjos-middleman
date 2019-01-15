@@ -2,7 +2,7 @@
 title: Portfolio
 ---
 <h1><%= current_page.data.title %></h1>
-<h2>Since 2012</h2>
+<p>Just a few of the sites and applications I've worked on.</p>
 <dl>
 <% data.portfolio.recent.each do |site| %>
  <dt>
@@ -20,6 +20,7 @@ title: Portfolio
 </dl>
 <h2>Previously</h2>
 <dl>
+
 <% data.portfolio.less_recent.each do |site| %>
  <dt>
   <%= link_to site[1]['name'], "//#{site[1]['url']}" %>

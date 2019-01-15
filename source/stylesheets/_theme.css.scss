@@ -14,12 +14,12 @@ a {
 }
 
 body {
-  background-color: $blue;
+background: linear-gradient(to right, $living-coral 0%, $storm 44%, rgba(181,186,182,.25) 100%);
   color: $text-color;
 }
 
 dd {
-  margin-bottom: $base-margin * 3;
+  margin-bottom: #{$base-margin * 3};
   margin-left: 0;
   p {
     margin-top: 0;
@@ -78,9 +78,10 @@ nav {
 
 .roles {
   li {
-    background: lighten($blue, 20%);
+    background: lighten($blue, 35%);
     border: 1px solid $gray;
     border-radius: 0.25rem;
+    color: darken($storm, 65%);
     padding: 0.5rem;
   }
 }
